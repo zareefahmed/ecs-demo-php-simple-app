@@ -20,9 +20,9 @@
                 <p>Your PHP application is now running on a container in Amazon ECS.</p>
                 <p>The container is running PHP version <?php echo phpversion(); ?>.</p>
                 <?php
-                        $myfile = fopen("/var/www/my-vol/date", "r") or die("");
-                        echo fread($myfile,filesize("/var/www/my-vol/date"));
-                        fclose($myfile);
+                       // $myfile = fopen("/var/www/my-vol/date", "r") or die("");
+                       // echo fread($myfile,filesize("/var/www/my-vol/date"));
+                       // fclose($myfile);
                 ?>
 
             </div>
@@ -31,6 +31,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
 <?php
+print "This is in the footer";
 phpinfo();
 ?>
     </body>
